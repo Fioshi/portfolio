@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    z-index: 2;
+}
+
+.mat-toolbar {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width:20vw;
+}

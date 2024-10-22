@@ -1,0 +1,45 @@
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section {
+    background-image: url(../../../assets/projects_back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 2em;
+}
+
+.cards-projetos{
+    height: 100vh;
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+mat-card{
+    position: relative;
+    padding: 1em;
+    background-color: rgb(210, 207, 227);
+    margin: 1em;
+    width: 20vw;
+    height: 35vh;
+}
+
+mat-card-subtitle{
+    color: rebeccapurple;
+}
+
+.link {
+    position: absolute;
+    bottom: 1em;
+}
