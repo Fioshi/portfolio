@@ -9,7 +9,14 @@ body {
 }
 
 .gradient-text {
+  background: linear-gradient(90deg, rgba(30,143,130,1) 16%, rgba(54,177,166,1) 35%, rgba(126,86,221,1) 100%);
+}
+
+.gradient-title {
   background-image: linear-gradient(90deg, rgba(118,113,205,1) 0%, rgba(105,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.gradient, .gradient-text, .gradient-title {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

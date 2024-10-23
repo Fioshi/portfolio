@@ -18,6 +18,12 @@ h2 {
     margin: 2em;
 }
 
+img {
+    width: 16vw;
+    height: 16vh;
+    border-radius: 0.5em;
+}
+
 .cards-projetos{
     height: 100vh;
     display: flex;
@@ -32,11 +38,15 @@ mat-card{
     background-color: rgb(210, 207, 227);
     margin: 1em;
     width: 20vw;
-    height: 35vh;
+    height: 42vh;
 }
 
 mat-card-subtitle{
     color: rebeccapurple;
+}
+
+mat-card-content{
+    margin-top: 1em;
 }
 
 .link {
