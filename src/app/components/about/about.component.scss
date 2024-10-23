@@ -1,4 +1,4 @@
-section{
+.about{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -6,14 +6,14 @@ section{
     text-align: center ;
 }
 
-section{
+.about{
     background-image: url("../../../assets/espace.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-img {
+.about-image {
     width: 10vw;
     height: auto;
     border-radius: 50%;
@@ -22,7 +22,7 @@ img {
 }
 
 
-div {
+.about-content {
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -34,12 +34,58 @@ div {
     // border-radius: 1.5rem;
 }
 
-h1 {
-    font-weight: bold;
+.about-title {
+    // font-weight: bold;
 }
 
-p {
-    font-size: 1.5em;
+.about-text {
+    // font-size: 1.5em;
     // letter-spacing: 0.1em;
-    word-spacing: 0.5em;
+}
+
+@media (min-width: 375px) and (max-width: 575px){
+    .about-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title {
+        display: none;
+    }
+
+    .about-text {
+        font-size: 1em;
+    }
+
+    .about-image {
+        display: none;
+    }
+}
+
+/* Tablet - entre 577px e 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .about-title {
+        font-size: 3em;
+    }
+    
+    .about-text {
+        font-size: 1em;
+    }
+
+    .about-image {
+        display: none;
+    }
+}
+
+/* Laptop - entre 769px e 992px */
+@media (min-width: 769px) and (max-width: 1024) {
+    .about-title {
+        font-size: 2em;
+    }
+
+    .about-text {
+        font-size: 10em
+    }
 }
