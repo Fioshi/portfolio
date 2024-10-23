@@ -3,6 +3,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { ActivatedRoute, Router, RouterModule, UrlTree } from '@angular/router';
 
 
 
@@ -13,11 +14,17 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
+  constructor(private router: Router) {}
+
+  navigateTo(route: string) {
+    this.router.navigate([`/${route}`], { fragment: `${route}` });
+  }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import path from 'path';
 
 @Component({
@@ -12,6 +13,19 @@ import path from 'path';
   styleUrl: './tecnlogies.component.scss'
 })
 export class TecnlogiesComponent {
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  }
 
   icones = [
     {
@@ -43,5 +57,6 @@ export class TecnlogiesComponent {
       name:"PL/SQL"
     }
   ]
+
 
 }

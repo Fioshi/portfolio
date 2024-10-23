@@ -2,11 +2,11 @@
   <mat-toolbar>
     <h1 class="gradient-text">Guilherme Fiochi</h1>
     <div class="buttons">
-      <button class="about-button" mat-stroked-button>Sobre</button>
-      <button class="projects-button" mat-raised-button color="primary">
+      <button class="about-button" (click)="navigateTo('about')" mat-stroked-button>Sobre</button>
+      <button class="projects-button" (click)="navigateTo('projects')" mat-raised-button color="primary">
         Projetos
       </button>
-      <button class="contact-button" mat-raised-button color="accent">
+      <button class="contact-button" (click)="navigateTo('contact')" mat-raised-button color="accent">
         Contato
       </button>
 
@@ -24,9 +24,9 @@
           yPosition="below"
           #menu="matMenu"
         >
-          <button mat-menu-item>Sobre</button>
-          <button mat-menu-item>Projetos</button>
-          <button mat-menu-item>Contato</button>
+          <button mat-menu-item (click)="navigateTo('about')">Sobre</button>
+          <button mat-menu-item (click)="navigateTo('projects')">Projetos</button>
+          <button mat-menu-item (click)="navigateTo('contact')">Contato</button>
         </mat-menu>
       </div>
     </div>
