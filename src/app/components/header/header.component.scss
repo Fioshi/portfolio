@@ -14,5 +14,51 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    width:20vw;
+    width:30vw;
+}
+
+.menu {
+    background-color: wheat;
+}
+
+.header-list {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 575px){
+    .header-list {
+        display: inline-block;
+    }
+    .about-button {
+        display: none;
+    }
+    .projects-button {
+        display: none;
+    }
+    .contact-button {
+        display: none;
+    }
+
+    .header-list {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .header-list {
+        display: inline-block;
+    }
+    
+    .about-button {
+        display: none;
+    }
+
+    .projects-button {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
 }
