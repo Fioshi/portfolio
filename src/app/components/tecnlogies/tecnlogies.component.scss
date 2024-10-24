@@ -61,8 +61,13 @@ figcaption {
 }
 
 @media (min-width: 375px) and (max-width: 575px) {
+
+  .tecnologies {
+    height: 70vh;
+  }
+
   img {
-    width: 30vw;
+    width: 25vw;
     margin-bottom: 1em;
   }
 }
