@@ -2,19 +2,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
 }
 
 section {
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 2%,
-    rgba(12, 7, 148, 1) 38%,
-    rgba(12, 34, 80, 1) 63%,
-    rgba(0, 0, 0, 1) 100%
-  );
-
+  background: var(--gradient-background)
 }
 
 h2 {
@@ -29,8 +22,6 @@ img {
 }
 
 .cards-projetos {
-  height: 200vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -38,23 +29,33 @@ img {
 
 mat-card {
   position: relative;
-  background-color: rgb(194, 188, 224);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  background-color: rgba(47, 47, 88, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(24, 10, 130, 0.125);
   margin: 1em;
   min-width: 30vw;
   width: 30vw;
   height: 40vh;
-  display: flex;
-  flex-wrap: wrap;
 
-
-}
-
-mat-card-subtitle {
-  color: rebeccapurple;
 }
 
 mat-card-content {
+  color: var(--text-color);
   margin-top: 1em;
+}
+
+mat-card-subtitle {
+  color: var(--text-color);
+}
+
+mat-card-actions{
+  width: 5em;
+}
+
+mat-icon {
+  width: 10em;
 }
 
 .link {
@@ -65,12 +66,9 @@ mat-card-content {
 @media (min-width: 375px) and (max-width: 575px){
     mat-card {
         position: relative;
-        background-color: rgb(194, 188, 224);
         margin: 1em;
         min-width: 80vw;
         display: flex;
         flex-wrap: wrap;
-      
-      
       }
 }
