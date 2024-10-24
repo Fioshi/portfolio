@@ -6,7 +6,7 @@
   background-color: black;
 }
 
-img {
+.tecnologies-image {
   width: 15vw;
   margin-bottom: 1em;
 }
@@ -63,11 +63,18 @@ figcaption {
 @media (min-width: 375px) and (max-width: 575px) {
 
   .tecnologies {
-    height: 70vh;
+    height: 80vh;
   }
 
-  img {
+  .tecnologies-image {
     width: 25vw;
     margin-bottom: 1em;
+  }
+
+  .carousel {
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
   }
 }
