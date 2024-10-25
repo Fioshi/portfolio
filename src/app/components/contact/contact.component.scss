@@ -1,0 +1,35 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // width: 100vw;
+    height: 100vh;
+
+    background: var(--gradient-background-reverse);
+}
+
+.contato-h2 {
+    font-size: 2em;
+
+}
+
+.contato-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    height: 50vh;
+}
+
+.contato-icon {
+}
+
+.contato-a {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 5em;
+
+    color: var(--text-color);
+}

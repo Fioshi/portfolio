@@ -7,7 +7,10 @@
 }
 
 .about{
-    background-image: url("../../../assets/espace.jpg");
+    // background-image: url();
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../../../assets/espace.jpg");
+
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +23,6 @@
     margin-bottom: 1em;
     object-fit: cover;
 }
-
 
 .about-content {
     display: flex;
@@ -37,6 +39,10 @@
 .about-title {
     font-family: var(--font-family) 
     
+}
+
+.about-text {
+    font-size: 1.5em;
 }
 
 @media (min-width: 375px) and (max-width: 575px){
@@ -59,8 +65,7 @@
     }
 }
 
-/* Tablet - entre 577px e 768px */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .about-title {
         font-size: 3em;
@@ -75,13 +80,17 @@
     }
 }
 
-/* Laptop - entre 769px e 992px */
-@media (min-width: 769px) and (max-width: 1024) {
+@media (max-width: 1025px) {
+
+    .about-image {
+        display: none;
+    }
+
     .about-title {
-        font-size: 2em;
+        display: none;
     }
 
     .about-text {
-        font-size: 10em
+        font-size:1.5em
     }
 }
